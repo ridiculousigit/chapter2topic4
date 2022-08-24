@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f3f1f2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Background Header-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/bg_rounded_tamyiz"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"/>
+
+    <!--Super Admin & Profile-->
+    <LinearLayout
+        android:id="@+id/header"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/gambar_tamyiz"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/gambar_tamyiz_profil" />
+
+            <TextView
+                android:id="@+id/judulkiri"
+                android:layout_marginVertical="10dp"
+                android:text="Super Admin"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--Pilihan Menu-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="210dp"
+        android:gravity="center"
+        app:layout_anchorGravity="center"
+        app:layout_anchor="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Transaksi Buku-->
+        <TextView
+            android:text="Transaksi Buku"
+            android:textColor="#5bb85d"
+            android:layout_marginHorizontal="30dp"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:drawableLeft="@mipmap/trans_satu"
+            android:text="Transaksi Penjualan Buku"
+            android:textAlignment="viewStart"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:backgroundTint="#ffffff"
+            app:cornerRadius="20dp"
+            android:textColor="@color/black"
+            android:layout_width="350dp"
+            android:layout_height="70dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:drawableLeft="@mipmap/trans_dua"
+            android:text="Data Buku || Tambah Data"
+            android:textAlignment="viewStart"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:backgroundTint="#ffffff"
+            app:cornerRadius="20dp"
+            android:textColor="@color/black"
+            android:layout_width="350dp"
+            android:layout_height="70dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:drawableLeft="@mipmap/trans_tiga"
+            android:textAlignment="viewStart"
+            android:text="Data Piutang Buku"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:backgroundTint="#ffffff"
+            app:cornerRadius="20dp"
+            android:textColor="@color/black"
+            android:layout_width="350dp"
+            android:layout_height="70dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:drawableLeft="@mipmap/trans_empat"
+            android:textAlignment="viewStart"
+            android:text="Laporan Penjualan Buku"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:backgroundTint="#ffffff"
+            app:cornerRadius="20dp"
+            android:textColor="@color/black"
+            android:layout_width="350dp"
+            android:layout_height="70dp"/>
+
+        <!--Transaksi Pesantren Bulanan-->
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="Transaksi Pesantren Bulanan"
+            android:textColor="#5bb85d"
+            android:layout_marginHorizontal="20dp"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:drawableLeft="@mipmap/trans_lima"
+            android:text="Pendaftaran Santri Baru"
+            android:textAlignment="viewStart"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:backgroundTint="#ffffff"
+            app:cornerRadius="20dp"
+            android:textColor="@color/black"
+            android:layout_width="350dp"
+            android:layout_height="70dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:drawableLeft="@mipmap/trans_enam"
+            android:text="Kas (D/K)"
+            android:textAlignment="viewStart"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:backgroundTint="#ffffff"
+            app:cornerRadius="20dp"
+            android:textColor="@color/black"
+            android:layout_width="350dp"
+            android:layout_height="70dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:drawableLeft="@mipmap/trans_tujuh"
+            android:textAlignment="viewStart"
+            android:text="Data Piutang Bulanan"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:backgroundTint="#ffffff"
+            app:cornerRadius="20dp"
+            android:textColor="@color/black"
+            android:layout_width="350dp"
+            android:layout_height="70dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:backgroundTint="#ffffff"
+            android:drawableLeft="@mipmap/trans_empat"
+            android:text="Laporan Keuangan"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            android:textColor="@color/black"
+            android:layout_width="350dp"
+            android:layout_height="70dp"/>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
