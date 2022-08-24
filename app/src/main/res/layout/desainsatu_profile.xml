@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Background Header-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/bg_rounded_bottom" />
+
+    <!--Title & QR Code-->
+    <LinearLayout
+        android:id="@+id/header"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/gambar_qrcode" />
+
+            <TextView
+                android:id="@+id/judulkiri"
+                android:layout_marginVertical="10dp"
+                android:text="Profil"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/judulkanan"
+                android:layout_toRightOf="@id/judulkiri"
+                android:layout_marginVertical="10dp"
+                android:text="e"
+                android:textColor="#fe8e09"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--User Field-->
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_anchorGravity="center"
+        app:layout_anchor="@id/header"
+        android:orientation="vertical">
+
+        <!--Title-->
+        <TextView
+            android:text="Your username"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!--ID User-->
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#ff8e11"
+            app:cardCornerRadius="20dp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="ID User                                       null"
+                android:textColorHint="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!--Email-->
+        <androidx.cardview.widget.CardView
+            android:backgroundTint="#ff8e11"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColorHint="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!--Logout Button-->
+
+        <!--Simpe Button-->
+        <!--<Button
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="LOGOUT"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_rounded_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>-->
+
+        <!--Material Button-->
+        <com.google.android.material.button.MaterialButton
+            android:layout_marginTop="40dp"
+            android:text="LOGOUT"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:backgroundTint="#0963a1"
+            app:cornerRadius="20dp"
+            android:layout_width="350dp"
+            android:layout_height="60dp"/>
+
+    </LinearLayout>
+
+    <!--Navigation Bar-->
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/footer"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:background="@android:color/transparent"
+            android:outlineSpotShadowColor="@color/white"
+            app:menu="@menu/menu_navigation_bottom"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <!--Floating Action Button-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        app:layout_anchor="@id/footer"
+        android:backgroundTint="#ff8e11"
+        android:src="@drawable/gambar_scanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

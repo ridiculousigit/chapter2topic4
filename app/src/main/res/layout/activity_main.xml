@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--Text-->
+    <TextView
+        android:text="hello"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--Button-->
+    <Button
+        android:text="save"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--Edit Text-->
+    <EditText
+        android:text="input username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--Checkbox-->
+    <CheckBox
+        android:text="makan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:text="minum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--Radio Button-->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RadioButton
+        android:text="laki-laki"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioButton
+        android:text="perempuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--Image View-->
+    <ImageView
+        android:src="@drawable/gambar_satu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <!--Image Button-->
+    <ImageButton
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--Progress Bar-->
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--Spinner-->
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
